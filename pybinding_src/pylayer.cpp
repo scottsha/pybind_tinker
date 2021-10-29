@@ -5,7 +5,10 @@
 
 namespace py = pybind11;
 
+std::string hi() {return "Saluton Mundo!";}
+
 PYBIND11_MODULE(pybindtinker, bindtinker_module) {
     bindtinker_module.doc() = "pybind11 example plugin";
     bindtinker_module.def("resolvent", &resolvent, "Add identity then invert the matrix");
+    bindtinker_module.def("hi", &hi, "Say hello");
 }

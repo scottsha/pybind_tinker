@@ -5,4 +5,5 @@
 
 Eigen::MatrixXd resolvent(const Eigen::MatrixXd& x, const double& lambda);
 
+
 #endif //BINDTINKER_EIGEN_MAT_MATH_H

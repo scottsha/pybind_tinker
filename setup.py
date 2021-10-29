@@ -126,7 +126,7 @@ setup(
     author_email="sscott@gmail.com",
     description="Conan mixed with pybind",
     long_description="",
-    ext_modules=[CMakeExtension("cmake_example")],
+    ext_modules=[CMakeExtension("pybindtinker")],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False,
     extras_require={"test": ["pytest>=6.0"]},
